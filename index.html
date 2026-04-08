@@ -1,85 +1,142 @@
-<!DOCTYPE html>  
-<html lang="en">  
-<head>  
-    <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>Horse Lovers' Hub</title>  
-    <link rel="stylesheet" href="styles.css">  
-</head>  
-<body>  
-    <header>  
-        <h1>Horse Lovers' Hub</h1>  
-        <nav>  
-            <ul>  
-                <li><a href="#">Home</a></li>  
-                <li><a href="#">Breeds</a></li>  
-                <li><a href="#">Care Tips</a></li>  
-                <li><a href="#">Gallery</a></li>  
-            </ul>  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horse Lovers' Hub - Modern Horse Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Horse Lovers' Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#breeds"><i class="fas fa-horse"></i> Breeds</a></li>
+                <li><a href="#care"><i class="fas fa-heart"></i> Care Tips</a></li>
+                <li><a href="#gallery"><i class="fas fa-images"></i> Gallery</a></li>
+            </ul>
         </nav>
-        <button id="dark-mode-toggle">Toggle Dark Mode</button>
+        <button id="dark-mode-toggle"><i class="fas fa-moon"></i> Toggle Dark Mode</button>
     </header>
-    <main>  
-        <section>  
-            <h2>Welcome to the Horse Lovers' Hub</h2>  
-            <p>Discover everything about horses, from majestic breeds to care tips and stunning galleries.</p>  
-        </section>  
-        <section id="breeds">  
-            <h2>Popular Horse Breeds</h2>  
-            <div class="breeds-grid">  
-                <div class="breed-card">  
-                    <h3>Arabian</h3>  
-                    <p>Known for their endurance and distinctive head shape, Arabians are one of the oldest horse breeds.</p>  
-                </div>  
-                <div class="breed-card">  
-                    <h3>Thoroughbred</h3>  
-                    <p>Famous for racing, Thoroughbreds are athletic, spirited, and known for their speed.</p>  
-                </div>  
-                <div class="breed-card">  
-                    <h3>Quarter Horse</h3>  
-                    <p>America's most popular breed, excels at sprinting and is versatile for ranch work.</p>  
-                </div>  
-                <div class="breed-card">  
-                    <h3>Appaloosa</h3>  
-                    <p>Recognized by their spotted coat pattern, they are versatile and gentle companions.</p>  
-                </div>  
-            </div>  
-        </section>  
-        <section id="care">  
-            <h2>Horse Care Tips</h2>  
-            <ul class="care-list">  
-                <li>Provide clean, fresh water at all times</li>  
-                <li>Feed a balanced diet appropriate for your horse's age and activity level</li>  
-                <li>Groom daily to maintain coat health and check for injuries</li>  
-                <li>Ensure regular exercise and turnout time</li>  
-                <li>Schedule routine veterinary care and vaccinations</li>  
-                <li>Keep hooves trimmed and maintained by a farrier</li>  
-            </ul>  
-        </section>  
-        <section id="gallery">  
-            <h2>Horse Gallery</h2>  
-            <div class="gallery-grid">  
-                <img src="https://picsum.photos/200/300?random=1" alt="Horse 1">  
-                <img src="https://picsum.photos/200/300?random=2" alt="Horse 2">  
-                <img src="https://picsum.photos/200/300?random=3" alt="Horse 3">  
-                <img src="https://picsum.photos/200/300?random=4" alt="Horse 4">  
-                <img src="https://picsum.photos/200/300?random=5" alt="Horse 5">  
-                <img src="https://picsum.photos/200/300?random=6" alt="Horse 6">  
-            </div>  
-        </section>  
-        <section id="contact">  
-            <h2>Get In Touch</h2>  
-            <form id="contact-form">  
-                <input type="text" id="name" placeholder="Your Name" required><br>  
-                <input type="email" id="email" placeholder="Your Email" required><br>  
-                <textarea id="message" placeholder="Your Message" rows="5" required></textarea><br>  
-                <button type="submit">Send Message</button>  
-            </form>  
-        </section>  
-    </main>  
-    <footer>  
-        <p>&copy; 2026 Horse Lovers' Hub. All rights reserved.</p>  
-    </footer>  
-    <script src="script.js"></script>  
-</body>  
+
+    <main>
+        <section id="home">
+            <h2>Welcome to the Horse Lovers' Hub</h2>
+            <p>Discover everything about horses, from majestic breeds to care tips and stunning galleries. Your ultimate destination for all things equine!</p>
+            <div class="cta-buttons">
+                <a href="#breeds" class="cta-button">Explore Breeds</a>
+                <a href="#gallery" class="cta-button">View Gallery</a>
+            </div>
+        </section>
+
+        <section id="breeds">
+            <h2>Popular Horse Breeds</h2>
+            <div class="breeds-grid">
+                <div class="breed-card">
+                    <div class="breed-icon"><i class="fas fa-horse"></i></div>
+                    <h3>Arabian</h3>
+                    <p>Known for their endurance and distinctive head shape, Arabians are one of the oldest horse breeds.</p>
+                    <div class="breed-features">
+                        <span><i class="fas fa-star"></i> Endurance</span>
+                        <span><i class="fas fa-star"></i> Intelligence</span>
+                    </div>
+                </div>
+                <div class="breed-card">
+                    <div class="breed-icon"><i class="fas fa-horse"></i></div>
+                    <h3>Thoroughbred</h3>
+                    <p>Famous for racing, Thoroughbreds are athletic, spirited, and known for their speed.</p>
+                    <div class="breed-features">
+                        <span><i class="fas fa-star"></i> Speed</span>
+                        <span><i class="fas fa-star"></i> Agility</span>
+                    </div>
+                </div>
+                <div class="breed-card">
+                    <div class="breed-icon"><i class="fas fa-horse"></i></div>
+                    <h3>Quarter Horse</h3>
+                    <p>America's most popular breed, excels at sprinting and is versatile for ranch work.</p>
+                    <div class="breed-features">
+                        <span><i class="fas fa-star"></i> Versatility</span>
+                        <span><i class="fas fa-star"></i> Strength</span>
+                    </div>
+                </div>
+                <div class="breed-card">
+                    <div class="breed-icon"><i class="fas fa-horse"></i></div>
+                    <h3>Appaloosa</h3>
+                    <p>Recognized by their spotted coat pattern, they are versatile and gentle companions.</p>
+                    <div class="breed-features">
+                        <span><i class="fas fa-star"></i> Unique Spots</span>
+                        <span><i class="fas fa-star"></i> Gentle Nature</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="care">
+            <h2>Horse Care Tips</h2>
+            <div class="care-container">
+                <div class="care-image">
+                    <img src="https://picsum.photos/400/300?random=7" alt="Horse Care">
+                </div>
+                <div class="care-content">
+                    <ul class="care-list">
+                        <li><i class="fas fa-tint"></i> Provide clean, fresh water at all times</li>
+                        <li><i class="fas fa-utensils"></i> Feed a balanced diet appropriate for your horse's age and activity level</li>
+                        <li><i class="fas fa-brush"></i> Groom daily to maintain coat health and check for injuries</li>
+                        <li><i class="fas fa-running"></i> Ensure regular exercise and turnout time</li>
+                        <li><i class="fas fa-stethoscope"></i> Schedule routine veterinary care and vaccinations</li>
+                        <li><i class="fas fa-cut"></i> Keep hooves trimmed and maintained by a farrier</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h2>Horse Gallery</h2>
+            <div class="gallery-grid">
+                <img src="https://picsum.photos/300/400?random=1" alt="Horse 1">
+                <img src="https://picsum.photos/300/400?random=2" alt="Horse 2">
+                <img src="https://picsum.photos/300/400?random=3" alt="Horse 3">
+                <img src="https://picsum.photos/300/400?random=4" alt="Horse 4">
+                <img src="https://picsum.photos/300/400?random=5" alt="Horse 5">
+                <img src="https://picsum.photos/300/400?random=6" alt="Horse 6">
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                    <i class="fas fa-comment"></i>
+                </div>
+                <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Horse Lovers' Hub. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="lightbox"></div>
+    <script src="script.js"></script>
+</body>
 </html>
